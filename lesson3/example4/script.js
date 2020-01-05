@@ -1,5 +1,4 @@
 'use strict';
-
 const products = [
     { 
         id: 3, 
@@ -15,9 +14,9 @@ const products = [
     },
 ];
 
-function reducePrice(element, index, array) {
-    element[index].price *= 0.85;
-    console.log(element[index]);
+function reducePrice(element) {
+    element.price *= 0.85;    
 }
 
 products.forEach(reducePrice);
+console.log(products);
