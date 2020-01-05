@@ -1,6 +1,6 @@
 'use strict';
 
-const products = [ 
+const products = [
     { 
         id: 3, 
         price: 200, 
@@ -14,8 +14,6 @@ const products = [
         price: 1000,
     },
 ];
-
-const element = ;
 
 function reducePrice(element, index, array) {
     element[index].price *= 0.85;
