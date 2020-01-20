@@ -46,6 +46,25 @@ let app = {
     },
     generateField(color, rowNum, colChar) {
         return `<div data-rownum='${rowNum}' data-colchar='${colChar}' class="cell ${color}"></div>`;
+    },
+    insertRowsNumbers() {
+        let rows = document.querySelectorAll('row');
+        for (let i = 0; i < rows.length; i++) {
+            let row = document.createElement('label');
+            row.innerText = this.config.rows[i];
+            rows[i].insertAdjacentElement('afterbegin', row);
+        }
+
+    },
+    insertColsChars() {
+        let col = document.createElement('row');
+        col.innerHTML += '<label></label>';
+        
+        for (let i = 0; i < this.config.cols.length; i++) {
+            col.innerHTML += `<label>${this.config.cols[i]}</label>`;            
+        }
+        let tbody = document.querySelector('tbody');
+        tbody.insertAdjacentElement('beforeend', col);
     }
 };
 
