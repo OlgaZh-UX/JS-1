@@ -1,0 +1,18 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    grid-gap: 20px;
+}
+
+.product {
+    width: 180px;    
+    box-shadow: rgba(226, 226, 226, 0.89);
+}
+img {
+    display: block;
+}
+.product-show-more {
+    display: block;
+    margin: 15px 0;
+}
+
