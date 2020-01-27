@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="header">
+            <button class="basket-button" type="button" onclick="showBasket()">
+                Корзина
+            </button>
+            <div class="basket-panel">
+                <table id="basket-table" class="basket-panel-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Имя</th>
+                            <th scope="col">Цена</th>
+                            <th scope="col">Количество</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="2" scope="row">Итого:</th>
+                            <td colspan="3">
+                                <span class="total">0</span>
+                                <i class="fas fa-ruble-sign"></i>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </nav>
+        <div class="product-list">
+            <div class="product">
+            <div class="product-name">Product 1 Name</div>
+            <img src="http://placeimg.com/640/480/nature" alt="Product">
+            <div>
+                <span class="productPrice">150</span>
+                <i class="fas fa-ruble-sign"></i>
+            </div>
+            <button class="product-show-more">Подробнее</button>
+            <button type="button" 
+                    class="product-btn-toBasket"
+                    data-id="1"
+                    data-price="150"
+                    data-name="Товар 1"
+                    >
+                В корзину
+            </button>
+        </div>
+        <div class="product">
+            <div class="product-name">Product 2 Name</div>
+            <img src="http://placeimg.com/640/480/arch" alt="Product">
+            <div>
+                <span class="productPrice">500</span>
+                <i class="fas fa-ruble-sign"></i>
+            </div>
+            <button class="product-show-more">Подробнее</button>
+            <button type="button" 
+                    class="product-btn-toBasket"
+                    data-id="2"
+                    data-price="500"
+                    data-name="Товар 2"
+                    >
+                В корзину
+            </button>
+        </div>
+        <div class="product">
+            <div class="product-name">Product 3 Name</div>
+            <img src="http://placeimg.com/640/480/tech" alt="Product">
+            <div>
+                <span class="productPrice">250</span>
+                <i class="fas fa-ruble-sign"></i>
+            </div>
+            <button class="product-show-more">Подробнее</button>
+            <button type="button" 
+                    class="product-btn-toBasket"
+                    data-id="3"
+                    data-price="250"
+                    data-name="Товар 3"
+                    >
+                В корзину
+            </button>
+        </div>
+        </div>
+        
+    </div>
+    
+    <script src="scripts/app.js"></script>
+</body>
+</html>
